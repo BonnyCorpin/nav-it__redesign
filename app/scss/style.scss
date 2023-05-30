@@ -124,8 +124,53 @@
 }
 
 .news {
+    gap: 25px;
     display: flex;
+    justify-content: flex-end;
     margin: 0 162px;
+    margin-bottom: 105px;
+}
+
+.news-list {
+    width: 50%;
+    gap: 25px;
+
+    &__item {
+        display: flex;
+        margin-bottom: 25px;
+        height: 195px;
+    }
+
+    &__desc {
+        flex: 1;
+        font-size: 1.2rem;
+        padding-left: 25px;
+    }
+
+    &__desc--no-image {
+        border-left: solid 10px $company;
+    }
+
+    &__image {
+
+        img {
+            object-fit: none;
+        }
+    }
+
+    &__text {
+        color: $text;
+        margin-bottom: 15px;
+    }
+
+    &__text--date {
+        color: $company;
+        font-size: 0.9rem;
+    }
+
+    &__text--heading {
+        font-family: PTSans-Bold;
+    }
 }
 
 .section-heading {
@@ -144,13 +189,14 @@
     h2 {
         font-size: 2rem;
         text-align: left;
+        margin-bottom: 25px;
     }
 }
 
 .footer {
     background-color: $text;
     color: $white;
-    padding: 125px 0;
+    padding: 125px 0 0 0;
 
     &-copyright {
         background-color: $footer;
