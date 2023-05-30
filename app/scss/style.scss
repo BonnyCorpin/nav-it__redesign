@@ -1,0 +1,158 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.67)), url("../images/header_img.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 151px;
+    }
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 95px;
+
+    &__item {
+        a {
+            color: $white;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+.logo {
+    margin-left: 80px;
+
+    img {
+        height: 100%;
+    }
+}
+
+.contacts {
+    margin-right: 45px;
+    width: fit-content;
+
+    &-location {
+        display: flex;
+        align-items: center;
+    }
+
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item--phone {
+        margin: 0;
+        letter-spacing: 0.02em;
+    }
+
+    &__text {
+        color: $white;
+        text-transform: uppercase;
+        //margin-right: 15px;
+
+        span {
+            color: $company;
+        }
+    }
+
+    &__text--lg {
+        font-size: 2rem;
+    }
+
+    &__icon {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    &__icon--expand {
+        margin-right: 0;
+        margin-left: 5px;
+    }
+}
+
+.intro {
+    display: flex;
+    color: $white;
+    font-family: PTSans-Bold;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+
+    span {
+        color: $company;
+    }
+
+    &__list {
+        margin-left: 0 auto;
+    }
+
+    &__item {
+        font-size: 3rem;
+    }
+}
+
+.button {
+    color: $white;
+    padding: 22px 50px;
+    background-color: $company;
+    border: none;
+    font-family: PTSans-Bold;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.partners {
+    //display: flex;
+}
+
+.news {
+    display: flex;
+    margin: 0 162px;
+}
+
+.section-heading {
+    h2 {
+        text-align: center;
+        margin: 150px 0 50px 0;
+        font-family: PTSans-Bold;
+        font-size: 4rem;
+        text-transform: uppercase;
+        color: $text;
+        letter-spacing: 0.105em;
+    }
+}
+
+.section-heading--col2 {
+    h2 {
+        font-size: 2rem;
+        text-align: left;
+    }
+}
+
+.footer {
+    background-color: $text;
+    color: $white;
+    padding: 125px 0;
+
+    &-copyright {
+        background-color: $footer;
+    }
+}
