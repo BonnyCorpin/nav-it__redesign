@@ -2,3 +2,11 @@ $white: #fff;
 $company: #237EAD;
 $text: #0E4B6A;
 $footer: #063751;
+$ftRegular: PTSans-Regular;
+$ftBold: PTSans-Bold;
+
+%font-regular {
+    font-family: $ftRegular;
+    font-size: 1rem;
+
+}

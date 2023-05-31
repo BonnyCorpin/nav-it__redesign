@@ -1,8 +1,7 @@
 html,
 body {
 	height: 100%;
-	font-family: PTSans-Regular;
-	font-size: 1rem;
+	@extend %font-regular
 }
 
 .wrapper {
