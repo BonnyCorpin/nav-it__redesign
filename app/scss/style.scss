@@ -176,10 +176,6 @@
     font-size: 2rem;
 }
 
-.partners {
-    //display: flex;
-}
-
 .news {
     gap: 25px;
     display: flex;
@@ -322,6 +318,74 @@
     top: 280px;
 }
 
+.portfolio {
+    &__card {
+        padding: 100px 79px;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: space-between;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.67)), url("../images/uztrasgaz.png");
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        font-family: $ftBold;
+        font-size: 2rem;
+        line-height: 50px;
+        text-align: right;
+        letter-spacing: 0.105em;
+        text-transform: uppercase;
+        color: $white;
+    }
+
+    &__text {
+        width: 40%;
+    }
+
+    &__text span {
+        color: $company;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        background-color: $company;
+
+        span {
+            padding: 0 28px;
+            font-size: 4rem;
+        }
+    }
+}
+
+.cert {
+    &__list {
+        display: flex;
+    }
+
+    &__card {
+        margin: 0 10px;
+    }
+
+    &__card img {
+        object-fit: contain;
+        box-shadow: 8px 5px 7px rgba(35, 126, 173, 0.08);
+    }
+
+    &__card span {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        font-family: $ftBold;
+        font-size: 1.25rem;
+        letter-spacing: 0.105em;
+        color: $text;
+        text-transform: uppercase;
+        margin-top: 20px;
+    }
+}
+
 .footer {
     display: flex;
     padding-bottom: 100px;
@@ -431,7 +495,7 @@
     padding: 0 50px;
 
     &__item {
-        margin: 85px 0;
+        margin: 50px 0;
         width: 100%;
     }
 
